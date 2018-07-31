@@ -56,6 +56,15 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="P&amp;ID.vi" Type="VI" URL="../UI Functions/P&amp;ID.vi"/>
 		<Item Name="ProcessSignals.vi" Type="VI" URL="../Utilities/ProcessSignals.vi"/>
+		<Item Name="PT2K-04_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-04_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0, 0.0040000000000000001, 2.5099999999999998, 5.0090000000000003</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 0, 1000, 2000</Property>
+		</Item>
+		<Item Name="SensorDAQ.vi" Type="VI" URL="../DAQ Functions/SensorDAQ.vi"/>
 		<Item Name="SensorDAQTest.vi" Type="VI" URL="../Test functions and prototypes/SensorDAQTest.vi"/>
 		<Item Name="TimingBar.vi" Type="VI" URL="../UI Functions/TimingBar.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -531,7 +540,6 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SensorDAQ.vi" Type="VI" URL="../DAQ Functions/SensorDAQ.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
