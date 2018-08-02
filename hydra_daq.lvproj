@@ -51,11 +51,52 @@
 		<Item Name="FileController.vi" Type="VI" URL="../File Output Functions/FileController.vi"/>
 		<Item Name="Fileout.vi" Type="VI" URL="../File Output Functions/Fileout.vi"/>
 		<Item Name="FileoutTest.vi" Type="VI" URL="../Test functions and prototypes/FileoutTest.vi"/>
+		<Item Name="FM-F_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">FM-F_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">gpm</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 50</Property>
+		</Item>
+		<Item Name="FM-O_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">FM-O_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">acfm</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0, 0.0051000000000000004, 1.1077999999999999, 4.1996000000000002</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 0, 10.9, 30.050000000000001</Property>
+		</Item>
 		<Item Name="LoadCellDAQ.vi" Type="VI" URL="../DAQ Functions/LoadCellDAQ.vi"/>
 		<Item Name="LoadCellDAQTest.vi" Type="VI" URL="../Test functions and prototypes/LoadCellDAQTest.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="P&amp;ID.vi" Type="VI" URL="../UI Functions/P&amp;ID.vi"/>
+		<Item Name="ProcessFMData.vi" Type="VI" URL="../Utilities/ProcessFMData.vi"/>
 		<Item Name="ProcessSignals.vi" Type="VI" URL="../Utilities/ProcessSignals.vi"/>
+		<Item Name="PT2K-01_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-01_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0080000000000000002, 2.5, 4.9850000000000003, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-02_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-02_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0040000000000000001, 2.5049999999999999, 4.9950000000000001, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-03_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-03_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.014, 2.4910000000000001, 4.9850000000000003, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
 		<Item Name="PT2K-04_Scale" Type="NI-DAQmx Scale">
 			<Property Name="Name" Type="Str">PT2K-04_Scale</Property>
 			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
@@ -63,6 +104,126 @@
 			<Property Name="ScaleType" Type="Str">Table</Property>
 			<Property Name="Table.PreScaledVals" Type="Str">0, 0.0040000000000000001, 2.5099999999999998, 5.0090000000000003</Property>
 			<Property Name="Table.ScaledVals" Type="Str">0, 0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-05_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-05_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0040000000000000001, 2.5099999999999998, 5.0010000000000003</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-06_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-06_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0080000000000000002, 2.5049999999999999, 4.9950000000000001, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-07_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-07_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str"></Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0070000000000000001, 2.5099999999999998, 4.9989999999999997</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-08_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-08_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0060000000000000001, 2.5129999999999999, 5.0060000000000002</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-09_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-09_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0050000000000000001, 2.5089999999999999, 4.9939999999999998, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-10_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-10_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0030000000000000001, 2.5089999999999999, 5.0010000000000003</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-11_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-11_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0060000000000000001, 2.4940000000000002, 4.9859999999999998, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-12_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-12_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0070000000000000001, 2.508, 5.0010000000000003</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-13_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-13_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0030000000000000001, 2.4990000000000001, 4.992, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT2K-14_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT2K-14_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0050000000000000001, 2.5030000000000001, 4.9909999999999997, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1000, 2000, 2000</Property>
+		</Item>
+		<Item Name="PT3K-01_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT3K-01_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0030000000000000001, 2.508, 4.9870000000000001, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1500, 3000, 3000</Property>
+		</Item>
+		<Item Name="PT3K-02_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT3K-02_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.002, 2.4980000000000002, 4.9939999999999998, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1500, 3000, 3000</Property>
+		</Item>
+		<Item Name="PT3K-03_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT3K-03_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">PSI</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.0050000000000000001, 2.5139999999999998, 4.9989999999999997, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1500, 3000, 3000</Property>
+		</Item>
+		<Item Name="PT3K-04_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT3K-04_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0, 2.496, 4.9820000000000002, 5</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1500, 3000, 3000</Property>
+		</Item>
+		<Item Name="PT3K-05_Scale" Type="NI-DAQmx Scale">
+			<Property Name="Name" Type="Str">PT3K-05_Scale</Property>
+			<Property Name="PreScaledUnits" Type="Str">Volts</Property>
+			<Property Name="ScaledUnits" Type="Str">psi</Property>
+			<Property Name="ScaleType" Type="Str">Table</Property>
+			<Property Name="Table.PreScaledVals" Type="Str">0.002, 2.5070000000000001, 5.0359999999999996</Property>
+			<Property Name="Table.ScaledVals" Type="Str">0, 1500, 3000</Property>
 		</Item>
 		<Item Name="SensorDAQ.vi" Type="VI" URL="../DAQ Functions/SensorDAQ.vi"/>
 		<Item Name="SensorDAQTest.vi" Type="VI" URL="../Test functions and prototypes/SensorDAQTest.vi"/>
